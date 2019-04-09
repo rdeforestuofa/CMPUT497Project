@@ -557,6 +557,7 @@ def main():
 					else:
 						print('Invalid move, please try again\n')
 			else:
+				print('The AI is thinking...\n')
 				find_move = alphabeta(gameboard, DEPTH_LIMIT, NEGINF, INF, True, moves, ai, True)
 				print(find_move)
 				moves += 1
@@ -618,6 +619,7 @@ def main():
 						print('Did not select one of your pieces or had no valid moves, please try again\n')
 			
 			else:
+				print('The AI is thinking...\n')	
 				find_move = alphabeta(gameboard, DEPTH_LIMIT, NEGINF, INF, True, moves, ai, True)
 				moves += 1
 				if len(find_move) == 2:
